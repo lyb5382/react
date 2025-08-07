@@ -1,22 +1,15 @@
-import React, { useState } from 'react'
+import React, { useRef } from 'react'
 
 const Counter = () => {
-    const [count, setCount] = useState(0)
-    const decrementCount = () => {
-        setCount(count - 1)
-    }
-    const incrementCount = () => {
-        setCount(count + 1)
-    }
-    const resetCount = () => {
-        setCount(0)
+    const countRef = useRef(0)
+    const increas = ()=>{
+        countRef.current+=1
+        console.log(`count ${countRef.current}`)
     }
     return (
         <div>
-            <h1>{count}</h1>
-            <button onClick={decrementCount}>-</button>
-            <button onClick={resetCount}>reset</button>
-            <button onClick={incrementCount}>+</button>
+            <p>count num: {countRef.current}</p>
+            <button onClick={increas}>+1</button>
         </div>
     )
 }
