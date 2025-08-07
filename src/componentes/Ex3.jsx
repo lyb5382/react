@@ -5,7 +5,7 @@ const Ex3 = () => {
   const changeInput = (e) => {
     setInput(e.target.value)
   }
-  const resetInput = (e) => {
+  const resetInput = () => {
     setInput('')
   }
   console.log(input)
