@@ -1,13 +1,11 @@
 import './App.css'
-import Squarecalc from './componentes/Squarecalc'
-import SortableList from './componentes/SortableList'
+import UserList from './componentes/UserList'
 
 function App() {
 
   return (
     <div>
-      <SortableList />
-      <Squarecalc />
+      <UserList />
     </div>
   )
 }
