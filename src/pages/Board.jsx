@@ -10,7 +10,7 @@ const Board = () => {
     return (
         <section>
             <h1>게시글</h1>
-            <ul>
+            <ul className='list'>
                 {dummy.map((b) => (
                     <li key={b.id}>
                         <Link to={`/board/${b.id}`}>
