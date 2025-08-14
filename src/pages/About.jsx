@@ -2,7 +2,7 @@ import React from 'react'
 import AboutHero from './About/AboutHero';
 
 const About = () => {
- const infoList = [
+  const infoList = [
     { id: 1, label: "회사명", desc: "React 학습 센터" },
     { id: 2, label: "위치", desc: "서울특별시 중구" },
     { id: 3, label: "설립연도", desc: "2020년" },
@@ -14,12 +14,13 @@ const About = () => {
 
   return (
     <section>
-        <h1>About 페이지</h1>
-        <ul>
-          {infoList.map((i)=>{
-            <li key={i.id}>{i.id}-{i.label}-{i.desc}</li>
-          })}
-        </ul>
+      <h1>About 페이지</h1>
+      <AboutHero />
+      <ul>
+        {infoList.map((i) => (
+          <li key={i.id}>{i.id} - {i.label} - {i.desc}</li>
+        ))}
+      </ul>
     </section>
   )
 }
