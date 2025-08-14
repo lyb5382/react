@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'HancomMalangMalang-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2406-1@1.0/HancomMalangMalang-Regular.woff2') format('woff2');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'HancomMalangMalang-Regular', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #505050;
+}
+
+section {
+  padding: 100px 20px;
+  max-width: 1440px;
+  margin: auto;
+  min-height: 80vh;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 80px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.list li {
+  padding: 10px;
+  background-color: #eee;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.list li a {
+  display: block;
+  height: 100%;
+}
+
+.list li:hover {
+  color: #fff;
+  background-color: #505050;
+}
+
+.list li:hover a {
+  color: #fff;
+}

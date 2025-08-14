@@ -1,0 +1,37 @@
+footer {
+    background-color: #363636;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+footer h2 {
+    text-transform: uppercase;
+}
+
+footer * {
+    color: #fff;
+}
+
+.sns-list {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sns-list li {
+    display: inline-block;
+}
+
+.sns-list a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.sns-list img {
+    width: 30px;
+    margin-right: 8px;
+}

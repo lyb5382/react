@@ -1,0 +1,17 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    border-bottom: 1px solid #eee;
+}
+nav h1 {
+    font-size: 20px;
+}
+.nav-list {
+    display: flex;
+    gap: 20px;
+}
+.nav-list li a.active{
+    color: black;
+    font-weight: bold;
+}
