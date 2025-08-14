@@ -16,7 +16,7 @@ const About = () => {
     <section>
       <h1>About 페이지</h1>
       <AboutHero />
-      <ul>
+      <ul className='list'>
         {infoList.map((i) => (
           <li key={i.id}>{i.id} - {i.label} - {i.desc}</li>
         ))}
